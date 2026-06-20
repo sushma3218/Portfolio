@@ -66,7 +66,7 @@ function AnimatedCounter({ value }: { value: number }) {
 
 export function Certifications() {
   return (
-    <section id="certifications" className="py-32 bg-secondary/5 relative overflow-hidden border-b border-white/5">
+    <section id="certifications" className="pt-32 pb-16 bg-secondary/5 relative overflow-hidden border-b border-white/5">
       <div className="absolute top-1/2 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] pointer-events-none -z-10 translate-x-1/3" />
       
       <div className="container px-4 md:px-6">

@@ -5,7 +5,7 @@ import { Mail, MapPin, ExternalLink } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-32 relative overflow-hidden bg-background border-t border-white/5">
+    <section id="contact" className="pt-16 pb-32 relative overflow-hidden bg-background border-t border-white/5">
       {/* Background Glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none -z-10" />
 

@@ -40,7 +40,7 @@ export function Skills() {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section id="skills" ref={containerRef} className="py-32 relative">
+    <section id="skills" ref={containerRef} className="pt-32 pb-16 relative">
       <div className="container px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

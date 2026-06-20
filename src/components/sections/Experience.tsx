@@ -38,7 +38,7 @@ const itemVariants: Variants = {
 
 export function Experience() {
   return (
-    <section id="experience" className="py-32 relative overflow-hidden">
+    <section id="experience" className="pt-16 pb-32 relative overflow-hidden">
       {/* Background ambient light */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none -z-10" />
 

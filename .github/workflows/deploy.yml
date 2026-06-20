@@ -36,8 +36,10 @@ jobs:
         run: npm install
       - name: Build Next.js
         run: npm run build
+      - name: Verify build output
+        run: ls -la out || echo "out directory not found"
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
       - name: Deploy to GitHub Pages

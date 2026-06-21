@@ -9,7 +9,7 @@ const highlights = [
   {
     icon: GraduationCap,
     title: "Academic Excellence",
-    description: "Maintaining an 8.97/10 CGPA in Computer Science Engineering with a focus on Artificial Intelligence and Machine Learning.",
+    description: "Maintaining a 9.04/10 CGPA in Computer Science Engineering with a focus on Artificial Intelligence and Machine Learning.",
   },
   {
     icon: BrainCircuit,

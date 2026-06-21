@@ -22,23 +22,23 @@ export function Hero() {
       </ParallaxSection>
 
       {/* Floating abstract AI/Tech elements */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none -z-10">
+      <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
         <motion.div 
-          className="absolute hidden md:block left-[10%] top-[25%] opacity-30"
+          className="absolute left-[5%] md:left-[10%] top-[15%] md:top-[25%] opacity-40"
           animate={{ y: [0, -30, 0], rotate: [0, 15, 0] }}
           transition={{ repeat: Infinity, duration: 7, ease: "easeInOut" }}
         >
-          <div className="w-32 h-32 rounded-full border border-emerald-500/20 flex items-center justify-center">
-            <div className="w-20 h-20 rounded-full border border-emerald-500/30" />
+          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border border-emerald-500/30 flex items-center justify-center">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-emerald-500/40" />
           </div>
         </motion.div>
 
         <motion.div 
-          className="absolute hidden md:block right-[12%] top-[30%] opacity-20"
+          className="absolute right-[5%] md:right-[12%] top-[20%] md:top-[30%] opacity-30"
           animate={{ y: [0, 20, 0], x: [0, -10, 0] }}
           transition={{ repeat: Infinity, duration: 8, ease: "easeInOut", delay: 1 }}
         >
-          <div className="font-mono text-xs text-primary/60 select-none">
+          <div className="font-mono text-[10px] md:text-xs text-primary/80 select-none">
             {"function train() {"}<br/>
             &nbsp;&nbsp;{"model.compile();"}<br/>
             &nbsp;&nbsp;{"await optimize();"}<br/>
@@ -47,16 +47,16 @@ export function Hero() {
         </motion.div>
 
         <motion.div 
-          className="absolute hidden lg:block right-[15%] bottom-[25%] opacity-20"
+          className="absolute left-[8%] md:right-[15%] md:left-auto bottom-[15%] md:bottom-[25%] opacity-30"
           animate={{ rotate: [0, 45, 0], scale: [1, 1.1, 1] }}
           transition={{ repeat: Infinity, duration: 10, ease: "easeInOut", delay: 2 }}
         >
-          <div className="w-24 h-24 grid grid-cols-3 grid-rows-3 gap-2">
+          <div className="w-20 h-20 md:w-24 md:h-24 grid grid-cols-3 grid-rows-3 gap-1 md:gap-2">
             {[...Array(9)].map((_, i) => (
               <motion.div 
                 key={i} 
-                className="bg-blue-400/30 rounded-sm"
-                animate={{ opacity: [0.3, 0.7, 0.3] }}
+                className="bg-blue-400/50 rounded-sm"
+                animate={{ opacity: [0.3, 0.8, 0.3] }}
                 transition={{ repeat: Infinity, duration: 3, delay: i * 0.2 }}
               />
             ))}

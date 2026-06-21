@@ -29,7 +29,7 @@ export function Hero() {
         >
           <MagneticWrapper>
             <Avatar className="h-32 w-32 md:h-40 md:w-40 border-2 border-primary/50 shadow-2xl shadow-primary/20 transition-transform duration-500 hover:scale-105">
-              <AvatarImage src={`${process.env.NODE_ENV === "production" ? "/Portfolio" : ""}/avatar.jpg`} alt="Sushma Karthikeyan" className="object-cover object-[center_10%] scale-[1.35]" />
+              <AvatarImage src={`${process.env.NODE_ENV === "production" ? "/Portfolio" : ""}/avatar.jpg`} alt="Sushma Karthikeyan" className="object-cover object-[50%_25%] scale-150" />
               <AvatarFallback className="bg-secondary text-3xl font-mono text-primary">SK</AvatarFallback>
             </Avatar>
           </MagneticWrapper>

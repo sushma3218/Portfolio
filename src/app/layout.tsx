@@ -25,7 +25,11 @@ export const metadata: Metadata = {
     "AI Projects Portfolio",
     "Software Developer Portfolio",
   ],
-  metadataBase: new URL("https://sushma3218.github.io/Portfolio/"),
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "https://sushma3218.github.io/Portfolio/"
+  ),
   authors: [{ name: "Sushma Karthikeyan" }],
   openGraph: {
     images: ["/opengraph-image.png"],
